@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>mills888 - rain world code commissions</title>
+<style>
+  body { font-family: "Segoe UI", Tahoma, sans-serif; font-size: 15px; line-height: 1.55; color: #d8d4cc; background: #15171a; max-width: 720px; margin: 0 auto; padding: 48px 20px 64px; }
+  h1 { font-size: 30px; font-weight: 600; letter-spacing: 1px; margin: 0 0 4px; color: #f0ece4; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 3px; color: #b4523a; margin-top: 44px; padding-bottom: 6px; border-bottom: 1px solid #2c3036; }
+  h3 { font-size: 17px; margin: 18px 0 4px; color: #f0ece4; }
+  a { color: #8fb3c9; text-decoration: none; border-bottom: 1px solid #3c4d59; }
+  a:hover { color: #c5dbe8; border-color: #c5dbe8; }
+  img { max-width: 100%; display: block; margin: 10px 0; border: 1px solid #2c3036; }
+  .small { color: #8a8780; font-size: 13px; }
+  .mod { margin-bottom: 30px; }
+  ul, ol { padding-left: 20px; }
+  table { border-collapse: collapse; width: 100%; }
+  td { padding: 8px; border-bottom: 1px solid #2c3036; vertical-align: top; }
+  td:first-child { width: 160px; color: #b4523a; }
+  b { color: #f0ece4; }
+</style>
+</head>
+<body>
+
+<h1>mills888</h1>
+<p class="small">Rain World code commissions. C# / BepInEx. Discord: <b>mills888</b> &middot; <a href="https://github.com/Mills888dev">GitHub</a> &middot; <a href="https://steamcommunity.com/profiles/76561198339921484/myworkshopfiles?appid=312520">Steam Workshop</a></p>
+
+<p>I've been making Rain World mods for a long time. I write only code, not art/sprites. If you have a slugcat, mechanic, or creature idea I'm able to build it.</p>
+
+<h2>What I take</h2>
+<ul>
+  <li>Slugcat abilities and movement (SlugBase or from scratch)</li>
+  <li>Gameplay mechanics, stamina, hydration, items, HUD stuff, Remix config menus, whatever code related</li>
+  <li>Creature behaviour and AI changes, new creatures if you have the art</li>
+  <li>Fixing or porting mods that broke on Watcher / newer versions</li>
+</ul>
+<p>Not taking: regions, art, sprites, sound. If your project needs those I can probably recommend you someone.</p>
+
+<h2>Stuff I've made</h2>
+<p class="small"> Source is on GitHub for most of it. Some of these are my own, some are other people's dead mods that I rewrote or ported for the current versions. It says which under each one.</p>
+
+<div class="mod">
+  <h3>Deadlands</h3>
+  <p>Community project I started and run, based on a daszombes region concept. New slugcat (the Nomad), regions, creatures, mechanics. The Workshop build is the early Nomad release.</p>
+  <img src="img/deadlands.png" alt="Deadlands">
+  <p class="small"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2979857064">Workshop</a> &middot; <a href="https://github.com/mills88812/Deadlands">GitHub</a></p>
+</div>
+
+<div class="mod">
+  <h3>The Mother (ongoing commission)</h3>
+  <p>Commission work for someone else's slugcat project. So far: a variant/rewrite of the Hydration System, a large config layer, and a custom fox creature (below). This mod is still in progress. No public source code.</p>
+  <img src="img/mother-fox.png" alt="Custom fox creature for The Mother">
+  <p class="small">Custom fox creature, art by the client.</p>
+  <!-- TODO: link to the Pup Integrity doc -->
+</div>
+
+<div class="mod">
+  <h3>Hydration System</h3>
+  <p>Thirst mechanic built for Deadlands and released standalone so other modders can use it. Adds a hydration bar, heat rooms and heat zones via DevTools, water source objects, food restores hydration, SlugBase per-character overrides, and a death timer with movement debuffs when you hit zero. This is close to what a "single mechanic" commission looks like.</p>
+  <img src="img/hydration.png" alt="Hydration System">
+  <img src="img/hydration-ingame.png" alt="Hydration meter in-game">
+  <p class="small"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3683038622">Workshop</a></p>
+</div>
+
+<div class="mod">
+  <h3>Action world</h3>
+  <p>Clear every room of enemies before you can move on. Has a Remix menu to pick which hostile creatures spawn in the hordes. Original code from Formal Lizard but required a complete rewrite.</p>
+  <img src="img/action-world.png" alt="Action world">
+  <p class="small"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3045915827">Workshop</a> &middot; <a href="https://github.com/Mills888dev/actionworld">Source</a></p>
+</div>
+
+<div class="mod">
+  <h3>Destructive Bombs</h3>
+  <p>Original by slime_cubed. Updated after it broke from the MSC expansion and have kept it working through Watcher since and added a remix menu.</p>
+  <img src="img/destructive-bombs.png" alt="Destructive Bombs">
+  <img src="img/destructive-bombs-ingame.png" alt="Destructive Bombs in-game">
+  <p class="small"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3017757842">Workshop</a> &middot; <a href="https://github.com/Mills888dev/DestructiveBombsRemix">Source</a></p>
+</div>
+
+<div class="mod">
+  <h3>Gourmond is GOD</h3>
+  <p>Removes Gourmand's exhaustion. Small single-mechanic mod, source is public if you want to see how I write.</p>
+  <p class="small"><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3020971684">Workshop</a> &middot; <a href="https://github.com/Mills888dev/gourmond-no-exhaust">Source</a></p>
+</div>
+
+<div class="mod">
+  <h3>Ports / rewrites</h3>
+  <p>Other people's mods that had died. Most of these were rewrites rather than recompiles.</p>
+  <ul>
+    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2966866355">Beached</a>: VirtuaVirtue's mod that removes (or floods) all liquid in the game. Fixed it for current versions and added the Remix menu after it sat broken for a year.</li>
+    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3026739690">Festive world</a>: slime_cubed's 1.5 santa hat mod, updated for current versions.</li>
+    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3386346274">linear world</a>: port. Makes Rain World a linear game. Did it in 4 hours because a friend asked, hard-coded mess, posted anyway.</li>
+  </ul>
+  <img src="img/beached.png" alt="Beached" style="max-width:320px;display:inline-block;margin-right:8px"><img src="img/festive-world.png" alt="Festive world" style="max-width:320px;display:inline-block">
+  <h3>Joke</h3>
+  <ul>
+    <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=3210424953">Dont stop moving</a> - april fools mod. Don't stop moving.</li>
+  </ul>
+</div>
+
+<p>Outside Rain World I made a multiplayer mod for Gloomwood (Unity, BepInEx) which took about a month and shipped without much breaking, if that matters to you.</p>
+
+<h2>Pricing</h2>
+<p>Before I start anything you get a written quote with an hours estimate. I will notify you before I hit my estimate if I should stop at the estimate or keep going and you will be given a new estimate. Changes to the plan after we agree on it get added separately.</p>
+<p>Rough idea of what things cost:</p>
+<table>
+  <tr><td>Fix / port a broken mod</td><td>usually 1-4 hrs $50+</td></tr>
+  <tr><td>Single mechanic (stamina, a new item, HUD element)</td><td>3-10 hrs, $100+</td></tr>
+  <tr><td>Slugcat ability kit (several abilities + config)</td><td>15-40 hrs, split into milestones $250+</td></tr>
+  <tr><td>Creature behaviour / new creature</td><td>10-40 hrs depending on what it does and usually around $400+</td></tr>
+</table>
+<p class="small">These are guesses and change massively depending on the feature.</p>
+
+<h2>How it works</h2>
+<ol>
+  <li>DM me on Discord (mills888) with what you want. Doesn't need to be polished, I'll ask questions. A design doc helps a lot but isn't required.</li>
+  <li>I send a quote. Bigger stuff gets broken into milestones, each with its own price.</li>
+  <li>New clients pay 50% of the milestone up front and rest if they want to test. Returning clients pay 50% to test.</li>
+  <li>I build it and send you a DLL to test in your own game. You tell me what's off, I fix it.</li>
+  <li>When you're happy, you pay the rest and get the source code for the project.</li>
+</ol>
+
+<h2>FAQ</h2>
+<table>
+  <tr><td>Turnaround</td><td>Depends entirely on the mechanic. Small fixes are usually days. At worst 1-2 months but that number is very variable. I will provide a deadline in the quote and tell you up front if busy.</td></tr>
+  <tr><td>Payment</td><td>Per milestone. First time working with me: 50% up front, 50% if you want to test it and/or before I hand over source. If I trust you or you're returning you just pay 50% before testing the DLL and the rest for the finished build and source code. Invoices are due within 30 days.</td></tr>
+  <tr><td>Payment methods</td><td>PayPal.</td></tr>
+  <tr><td>Refunds</td><td>If I haven't started, full refund of the deposit. If you cancel partway through a milestone, you pay for the hours done up to that point and get the unfinished code upon request. Finished or tested milestones aren't refundable. If something I delivered breaks on a game update or has a bug within 30 days I will fix it for free.</td></tr>
+  <tr><td>Revisions</td><td>Tuning and bug fixes on what we agreed to are included. New features are a new quote.</td></tr>
+  <tr><td>Who owns it</td><td>You. Once a milestone is paid the code is yours to publish, change, or keep private. I'd like credit as the programmer if it goes public but I won't fight you on it.</td></tr>
+  <tr><td>Queue</td><td>No Trello. Whatever I'm currently on is listed below and I update it by hand.</td></tr>
+</table>
+
+<h2>Currently working on</h2>
+<ul>
+  <li>The Mother</li>
+</ul>
+<p class="small">Last updated Sept 2026</p>
+</body>
+</html>
